@@ -1,0 +1,33 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 150
+BreakBeforeBinaryOperators: All
+AlignAfterOpenBracket: Align
+Cpp11BracedListStyle: false
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterDefinitionReturnType: false
+AlwaysBreakBeforeMultilineStrings: false
+BreakBeforeBraces: Custom
+SortIncludes: true
+SpacesInParentheses: false
+SpacesInContainerLiterals: false
+SpaceBeforeParens: ControlStatements
+CommentPragmas: true
+
+NamespaceIndentation: All
