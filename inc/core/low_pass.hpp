@@ -1,14 +1,14 @@
-#include "dsp_core.h"
+#pragma once
+#include "dsp_core.hpp"
 
-namespace  DSP {
+namespace DSP {
+    class LowPass : public Filter {
+    public:
+        LowPass(int order, double cutoffFrequency, double sampleRate);
+        ~LowPass() override = default;
+        void process(const std::vector<double>& input, std::vector<double>& output) override;
 
-class LowPass : public Filter {
-public:
-    LowPass(int order, double cutoffFrequency, double sampleRate);
-    void process(const std::vector<double>& input, std::vector<double>& output) override;
-
-private:
-    std::vector<double> m_buffer;
-};
-
+    private:
+        double prev_output;
+    };
 }

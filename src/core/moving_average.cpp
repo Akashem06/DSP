@@ -2,10 +2,8 @@
 
 namespace DSP {
 
-MovingAverage::MovingAverage(int windowSize) : Filter(windowSize - 1), m_buffer(windowSize) {}
+    MovingAverage::MovingAverage(int windowSize) : Filter(windowSize - 1), m_buffer(windowSize) {}
 
-void MovingAverage::process(const std::vector<double>& input, std::vector<double>& output) {
-    
-}
+    void MovingAverage::process(const std::vector<double>& input, std::vector<double>& output) {}
 
-}
+}  // namespace DSP

@@ -1,5 +1,4 @@
 #pragma once
-
 #include <vector>
 #include <complex>
 
@@ -13,8 +12,8 @@ public:
 
 class Filter : public DSPObject {
 public:
-    Filter(int order);
-    virtual ~Filter() = default;
+    explicit Filter(int order) : m_order(order) {}
+    ~Filter() override = default;
 
 protected:
     int m_order;
