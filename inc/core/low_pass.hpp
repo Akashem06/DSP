@@ -3,12 +3,12 @@
 
 namespace DSP {
     class LowPass : public Filter {
-    public:
-        LowPass(int order, double cutoffFrequency, double sampleRate);
+       public:
+        LowPass(int order, double cutoff_frequency, double sample_rate);
         ~LowPass() override = default;
         void process(const std::vector<double>& input, std::vector<double>& output) override;
 
-    private:
+       private:
         double prev_output;
     };
-}
+}  // namespace DSP

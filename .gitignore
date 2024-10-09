@@ -1,5 +1,4 @@
 build/*
 .vscode/*
 
-*/pycache/*
-venv/*
+results/*/*.wav
